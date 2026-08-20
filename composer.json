@@ -1,0 +1,16 @@
+{
+  "name": "contracting-company/erp",
+  "description": "Core PHP MVC Contracting Company ERP and Workforce Management System",
+  "type": "project",
+  "require": {
+    "php": ">=8.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    },
+    "files": [
+      "app/Helpers/functions.php"
+    ]
+  }
+}

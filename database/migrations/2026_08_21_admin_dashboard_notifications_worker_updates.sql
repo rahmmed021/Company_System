@@ -1,0 +1,4 @@
+SET NAMES utf8mb4;
+
+ALTER TABLE workers ADD COLUMN IF NOT EXISTS date_of_birth DATE NULL AFTER nid;
+ALTER TABLE notifications ADD COLUMN IF NOT EXISTS destination_url VARCHAR(255) NULL AFTER body_key;

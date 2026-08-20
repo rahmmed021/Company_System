@@ -1,0 +1,41 @@
+# Smoke Test Checklist
+
+Use this checklist after importing `database/schema.sql` and `database/seed.sql`.
+
+- Admin login with `admin@example.com` or `01700000000` and `ChangeMe123!`.
+- Foreman login with `01800000000` and `ChangeMe123!`.
+- Labor login with `01900000000` and `ChangeMe123!`.
+- Wrong password fails and login history is recorded.
+- Admin can create, edit, soft-delete, and search workers.
+- Worker creation creates a matching secure login account.
+- New workers receive unique `NEP + joining date + random numbers` ID numbers.
+- New workers receive automatic ID card records.
+- Admin can view worker photo in the Workers table instead of a visible ID column.
+- Admin can open worker profile from the Workers table.
+- Admin can view, edit, delete, print, and download worker ID cards.
+- Foreman/labor can view and download only their own ID card.
+- Admin can create projects and assign workers.
+- Foreman sees only assigned projects.
+- Foreman can submit attendance for assigned projects.
+- Foreman cannot edit or delete submitted attendance.
+- Attendance calculates daily salary, overtime amount, and total salary.
+- Salary appears on worker profile and dashboard.
+- Worker dashboard shows translated Withdrawn text, never `[dashboard.withdrawn]`.
+- Advance, withdrawal, bonus, and deduction change worker balance.
+- Daily expense, material, food, and vehicle modules save project costs separately.
+- Expense invoice image upload/view/download works and expense status is hidden from forms/tables.
+- Material invoice image upload/view/download works and carrying cost is included.
+- Food form hides quantity/unit price and uses carrying cost plus total cost.
+- Client payments save separately from project expenses and update receivable reports.
+- Equipment assignment updates available and assigned quantities.
+- Leave application can be created by foreman/labor and reviewed by admin.
+- Reports filter by date/status and export print/PDF, Excel, and CSV.
+- Foreman cannot see or access reports.
+- English and Bangla language switching works on login and protected pages.
+- Bangla is the default language.
+- Public homepage displays hero, updates, gallery, about, services, recent projects, running projects, contact, logo, and login option.
+- Admin can manage homepage sections, updates, services, photos, and videos.
+- Foreman/labor cannot manage homepage content.
+- DataTables search, pagination, sorting, and export controls appear on large tables.
+- Admin backup is restricted to admin.
+- Audit logs are generated and cannot be edited through the UI.
